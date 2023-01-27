@@ -47,28 +47,28 @@ else {
 
   
 function preload() {
-  playerImg = loadImage("images/Grumio.png"); 
-  monsterImg = loadImage("images/fire.png");
-  ghostImg = loadImage("images/Nerro2.png");
-  bgImg = loadImage("images/Rome.png");
-  projectileImg = loadImage("images/splash.png");
-  song = loadSound("music/LatinMusic4.mp3", loaded);
-  bgImg2 = loadImage("images/lose.png");
-  bgImg3 = loadImage("images/win.png");
-  lose = loadSound("music/sadtrombone.swf.mp3");
-  win = loadSound("music/win1.mp3");
-  leave = loadImage("images/amazingimage.png");
+  playerImg = loadImage("Grumio.png"); 
+  monsterImg = loadImage("fire.png");
+  ghostImg = loadImage("Nerro2.png");
+  bgImg = loadImage("Rome.png");
+  projectileImg = loadImage("splash.png");
+  song = loadSound("LatinMusic4.mp3", loaded);
+  bgImg2 = loadImage("lose.png");
+  bgImg3 = loadImage("win.png");
+  lose = loadSound("sadtrombone.swf.mp3");
+  win = loadSound("win1.mp3");
+  leave = loadImage("amazingimage.png");
 }
 
 
 function setup() {
   createCanvas(canvasWidth, canvasHeight);
   player = createSprite(playerX, playerY, sprWidth, sprHeight);
-   player.addImage(playerImg, "images/Grumio.png"); 
+   player.addImage(playerImg, "Grumio.png"); 
    monster = createSprite(monsterX, monsterY, sprWidth, sprHeight);
-  monster.addImage(monsterImg, "images/fire.png");
+  monster.addImage(monsterImg, "fire.png");
   ghost = createSprite(ghostX, ghostY, sprWidth, sprHeight);
-  ghost.addImage(ghostImg, "images/Nerro2.png");
+  ghost.addImage(ghostImg, "Nerro2.png");
 
   
   
@@ -215,7 +215,7 @@ function esc(){
 }
 function createEnemy(x, y){
   var newEnemy = createSprite(x,y);
-  var attackImg = loadImage("images/fire.png");
+  var attackImg = loadImage("fire.png");
   newEnemy.addImage(attackImg);
   newEnemy.setSpeed(0, random(360));
   newEnemy.setCollider("rectangle", 0, 0, 40, 40);
