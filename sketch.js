@@ -53,11 +53,8 @@ function preload() {
   bgImg = loadImage("Rome.png");
   projectileImg = loadImage("splash.png");
   song = loadSound("LatinMusic4.mp3", loaded);
-  bgImg2 = loadImage("lose.png");
-  bgImg3 = loadImage("win.png");
   lose = loadSound("sadtrombone.swf.mp3");
   win = loadSound("win1.mp3");
-  leave = loadImage("amazingimage.png");
 }
 
 
